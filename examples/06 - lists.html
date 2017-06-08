@@ -1,0 +1,31 @@
+    <!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div class="container" id="app">
+        <ul>
+            <!-- las iteraciones tienen la forma "item in array"-->
+            <li v-for="persona in personas">{{ persona.nombre }} - {{ persona.apellido }}</li>
+            <!-- opcionalmente se puede obtener el índice del ítem actual -->
+            <li v-for="(persona, index) in personas">{{ persona }} - {{ index }}</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                personas:[
+                    {nombre: "Ariel", apellido: "Rojas"},
+                    {nombre: "Lucas", apellido: "Alario"},
+                    {nombre: "Gonzalo", apellido: "Martinez"}
+                ]
+            }
+        });
+    </script>
+</body>
+</html>
+
+    
