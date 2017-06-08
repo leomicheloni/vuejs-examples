@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div class="container">
+     <div id="app"> <!-- este elemento será el nodo que controlaremos con Vue -->
+        {{message}} <!-- message es el nombre de la propiedad que se muestre aquí -->
+     </div>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app', //selector css del elemento que será la vista
+            data: {     //data contiene las propiedades, es siempre un objeto
+                message: 'Hola mundo'
+            }
+        });
+    </script>
+</body>
+</html>
