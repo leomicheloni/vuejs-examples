@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div>
+    <div class="user" v-for="user in users">
+        <app-user :user="user"></app-user>
+    </div>
+    </div>
+    
+</div>
+<script>
+    Vue.component('app-user', {
+        props:['user'],
+        template: '<div>{{user.name}} {{user.lastName}}</div>'
+    });
+
+    new Vue({
+        el: '#app',
+        data: {
+            users:[
+                {name: "Ariel", lastName: "Rojas"},
+                {name: "Lucas", lastName: "Alario"},
+                {name: "Gonzalo", lastName: "Martinez"}
+            ]
+        }
+    });
+    </script>
+</script>
+</body>
+</html>
