@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!-- los filtros se pueden concatener uno tras otro -->
+    <p>{{ title | uppercase | lowercase }}</p>
+    <p>{{ message | uppercase }}</p>
+</div>
+<script>
+    //estos filtros son de visibilidad general
+    Vue.filter('uppercase', function(value) {
+        return value.toUpperCase();
+    });
+
+    new Vue({
+        el: '#app',
+        data: {
+            title: 'hello world!',
+            message: 'something'
+        },
+        computed: {
+            theTitle: function() {
+                return this.title.toUpperCase();
+            }
+        },
+        filters: { //este filtro es solo visible para esta vista
+            lowercase: function(value) {
+                return value.toLowerCase();
+            }
+        }
+    });
+</script>
+</body>
+</html>
