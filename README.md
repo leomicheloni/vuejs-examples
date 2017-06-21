@@ -1,1 +1,1 @@
-# vuejs-50-examples
+# Set of examples on how do things with Vuejs
