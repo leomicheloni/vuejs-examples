@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+     <div class="container" id="app">
+        <ul>
+            <li v-for="persona in personas">{{ persona.nombre }} - {{ persona.apellido }} <a @click="remove(persona)" href="#">quitar</a></li>
+        </ul>
+        <input type="text" v-model="newName" />
+        <input type="text" v-model="newLastName" />
+        <button @click="add">Add</button>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                personas:[
+                    {nombre: "Ariel", apellido: "Rojas"},
+                    {nombre: "Lucas", apellido: "Alario"},
+                    {nombre: "Gonzalo", apellido: "Martinez"}
+                ],
+                newName: "",
+                newLastName: ""
+            },
+            methods:{
+                add: function(){
+                    this.personas.push({
+                        nombre: this.newName,
+                        apellido: this.newLastName
+                    });
+                    this.newLastName = "";
+                    this.newName = "";
+                },
+                remove: function(item){
+                    var index = this.personas.indexOf(item);
+                    this.personas.splice(index, 1);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
