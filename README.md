@@ -10,4 +10,5 @@
  - [Filters](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/08%20-%20filters.html)
  - [Simple component](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/09%20-%20components.html)
  - [Dynamic list, allows to add items](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/10%20-%20dynamic-list.html)
- - [Dynamic list, allows to remove items](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/10%20-%20dynamic-list-remove.html)
+ - [Dynamic list, allows to remove items](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/11%20-%20dynamic-list-remove.html)
+ - [Dynamic list with filter](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/12%20-%20dynamic-list-filters.html)
