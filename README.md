@@ -1,7 +1,7 @@
 # Set of examples on how do things with Vuejs
 
  - [Hello World](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/01%20-%20hello.html)
- - [Simple Binding] (https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/02%20-%20binding.html)
+ - [Simple Binding](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/02%20-%20binding.html)
  - [Directives](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/03%20-%20directive.html)
  - [If](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/04%20-%20if.html)
  - [Events](https://github.com/leomicheloni/vuejs-50-examples/blob/master/examples/05%20-%20events.html)
